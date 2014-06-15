@@ -60,10 +60,15 @@
      import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
      ```
 + 2、 安装包 `ctrl + shift + p`  然后输入 `install package`
-
 + 3、安装terminal plugin， 快速打开控制台
      + 1. install terminal
      + 2. 默认快捷键　`ctrl + shift + t`
      + 3. 修改快捷键为 `alt + f12` 与 webstorm保持一致
-     
-    
+
+###### 第五章、[自定义偏好](http://docs.sublimetext.info/en/latest/reference/command_palette.html)
++ 1、自定义偏好包含四个部分：.sublime-commands、.sublime-keymap、.sublime-settings、.sublime-menu。这也是定义一个plugin必须的四个文件.
+	+ 1、.sublime-commands 用于配置 command palette, 以下是组成部分介绍:
+		+ 1. `caption` 在 command palette 上显示的名称
+		+ 2. `command` 执行的命令
+		+ 3. `args` 命令的参数
+	+ 2、.sublime-menu 用于配置 菜单, 组成与.sublime-commands一致
