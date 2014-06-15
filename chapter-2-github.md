@@ -23,6 +23,20 @@ step3. 在github中添加ssh key
 **注意： ssh key 的title必须是github用户名**
 
 
-asdfas
+####异常处理
+D:\WebstormProjects\text-edit>git push -u gitorigin master
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+这里是key 没有导入ssh-agent 或者 ssh-agent没有启动，
+
+
+**[解决办法](https://help.github.com/articles/working-with-ssh-key-passphrases)：**
+1. 创建`~/.profile` or `~/.bashrc file`
+2. 重启bash ，输入passwrd
+3. 重新测试一下: ssh -T tdp100@github.com
 
 
