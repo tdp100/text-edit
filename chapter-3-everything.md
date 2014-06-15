@@ -1,6 +1,6 @@
-#[everythine](http://www.voidtools.com/)搜索引擎
+#[everythine](http://www.voidtools.com/)
 
-###### 第一章、整合everything
+###### 第一章、整合everything搜索引擎
 
-########为一个新的plugin，允许在sublime 中全局搜索文件并打开
+设计一个新的plugin，允许在sublime 中全局搜索文件并打开
 
