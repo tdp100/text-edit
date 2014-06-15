@@ -72,3 +72,19 @@
 		+ 2. `command` 执行的命令
 		+ 3. `args` 命令的参数
 	+ 2、.sublime-menu 用于配置 菜单, 组成与.sublime-commands一致
+	+ 3、.sublime-keymap 预设的快捷键
+	+ 4、.sublime-settings 偏好设置
+
+###### 第六章、[自定义Plugin](http://docs.sublimetext.info/en/latest/reference/plugins.html)
++ 1、Plugin 是实现*Command类的Python脚本
++ 2、Command名称的转化规则：
+	+ 命名采用驼峰方式，首字母大写,eg: NameLikeThisCommand
+	+ 自动转化为命令名为: name_like_this
+	+ 使用name_like_this 从API中调用command
++ 3、Command 类型
+	+ 1. sublime_plugin.WindowCommand
+	+ 2. sublime_plugin.TextCommand
+	+ 3. sublime_plugin.EventListener 
++ 4、如何从API中去调用Command
+    + 1. eg: `<object>.run_command('command_name')` 
+    + 2. 除了command_name 参数外，还可以传json格式的args		

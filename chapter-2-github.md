@@ -5,7 +5,7 @@
 step1. 进入C:\Users\TDP\.ssh目录
 
 step2. 生成ssh key
-```sh
+```
 C:\Users\TDP>ssh-keygen -t rsa -C "mapleleaf1988@126.com"
 Generating public/private rsa key pair.
 Enter file in which to save the key (//.ssh/id_rsa): */c/Users/TDP/.ssh/id_rsa*
