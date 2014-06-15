@@ -3,7 +3,7 @@
 
 ###### 第一章、工具选择
 + 1、文本编辑工具 sublime text 3
-+ 2、编辑语法 vim
++ 2、编辑语法 [vim](https://github.com/sublimehq/Vintage)
   + 配置
     `preferences->seting user`
     输入如下python语句
