@@ -35,6 +35,8 @@ and the repository exists.
 
 
 **[解决办法](https://help.github.com/articles/working-with-ssh-key-passphrases)：**
+
+
 1. 创建`~/.profile` or `~/.bashrc file`
 2. 重启bash ，输入passwrd
 3. 重新测试一下: ssh -T tdp100@github.com
