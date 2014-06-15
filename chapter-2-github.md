@@ -16,11 +16,13 @@ Your public key has been saved in /c/Users/TDP/.ssh/id_rsa.pub.
 The key fingerprint is:
 4a:05:88:e3:0f:be:98:77:a5:4e:87:85:8a:98:42:6c mapleleaf1988@126.com
 
-$ssh-add ~/.ssh/id_rsa
+$clip < ./.ssh/id_rsa.pub
 ```
-出现如下错误
-`C:\Users\TDP\.ssh>ssh-add id_rsa        
-Could not open a connection to your authentication agent.`
 
-原因： ssh-agent服务没有启动
+step3. 在github中添加ssh key
+**注意： ssh key 的title必须是github用户名**
+
+
+
+
 
